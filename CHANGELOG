@@ -1,0 +1,32 @@
+v0.0.4
+	* Fix variable function error in CryptoService
+	* Fix variable spelling area in File
+
+v0.0.3
+	* Main: Additional logging in debug mode
+	* Skip files in recursive function now actually skips the foreach iteration
+	* Main: try/catch blocks added around many object calls
+	* Main: Timing of various function added, and output
+	* Main: Statistics output delayed until all functions complete as an overview
+	* Main: Moved file listing operations to allow listing without moving and vice versa
+	* Main: Addition of various command-line parameters:
+	* 	--debug flag now operates debug mode on/off
+	* 	--list flag now operates the duplicate file listing
+	* 	--move flag will move duplicates into a specified directory
+	* 	--cleandirs flag will recursively remove empty directories from the source tree
+
+	?? Exception Handler
+	?? File moving / deletion - make deletion require confirmation i.e.
+		--delete --confirm  : without both, no deletes
+	?? Ideally, Directory should be an object - we could list, ask if empty and delete in a single function
+
+v0.0.2
+	* Main: Allow the use of exclusion strings
+	* Main: Addition of a debug mode for additional output
+	* Main: Output some values, such as directories and process statistics
+	* ChecksumDB: Store *all* files and their associated checksums, including duplicates
+	* ChecksumDB: Link duplicate files with their parent, so that we can display them later on
+	* ChecksumDB: Fix count for all files processed
+
+v0.0.1
+	* Initial codebase - find duplicates and display their file names as a list
